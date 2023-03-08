@@ -1,0 +1,107 @@
+#######################
+# Common
+#######################
+
+# Executing node identifier (Default=jmig)
+ID=tac1
+# Rule DB JDBC connection URL (Default=jdbc:tibero:thin:@localhost:8629:tibero)
+CONN_URL=jdbc:tibero:thin:@127.0.0.1:8629:tibero
+# Rule DB User (Default=jmig)
+RULE_SCHEMA=jmig
+# Rule DB password (Default=jmig)
+RULE_PASS=jmig
+
+# create snapshot by migration step (Default=N)
+USE_TPR=N
+# create snapshot for TAC (Default=N)
+CREATE_TPR_SNAPSHOT_ALL=N
+
+# LOG LEVEL[TRACE|DEBUG|INFO|ERROR] (Default=INFO)
+LOG_LEVEL=INFO
+# whether print log to console(=screen) (Default=Y)
+PRINT_CONSOLE=Y
+
+#######################
+# Table Data Migration
+#######################
+
+# whether execute table data migration (Default=Y)
+MIG_TABLE=Y
+# rule table name for table data (Default=MIG_TAB)
+MIG_TAB_RULE_NM=MIG_TAB
+# Number of work thread for data migration (Default=4)
+MIGTAB_PARALLEL_COUNT=4
+# Start DB.mig_seq Number for data migration (Default=0)
+MIGTAB_START_MIGSEQ=0
+# ignore error on table data migration (Default=Y)
+# If set to Y, not exit work thread but progress
+# If set to N, exit work thread
+IGNORE_MIG_TAB_ERROR=Y
+# table migrator file name (Default=migrator.sh)
+MIGTOOL_NAME=migrator.sh
+# table migrator home directory (Default=/home/tibero/work/jmig/migrator)
+MIGTOOL_HOME=/home/tibero/work/jmig/migrator
+# table migrator log directory (Default=/home/tibero/work/jmig/migrator/auto_log)
+MIGTOOL_LOGPATH=/home/tibero/work/jmig/migrator/auto_log
+
+# whether execute nologging ddl on db link migration (Default=N)
+EXEC_NOLOGGING=N
+
+# whether use long type on db link migration for row count  (Default=N)
+USE_LONGTYPE_FOR_ROWCNT=N
+
+#######################
+# SCRIPT
+#######################
+
+# whether execute script migration (Default=Y)
+MIG_SCRIPT=Y
+# rule table name for scripts (Default=MIG_SCRIPT)
+MIG_SCRIPT_RULE_NM=MIG_SCRIPT
+# script home directory (Default=/home/tibero/work/jmig/script)
+SCRIPT_HOME=/home/tibero/work/jmig/script
+# ignore error on script migration (Default=Y)
+# If set to Y, not exit work thread but progress
+# If set to N, exit work thread
+IGNORE_MIG_SCRIPT_ERROR=Y
+# whether execute ddl : alter session set current_schema=#target_owner (Default=N)
+SWITCH_OWNER_SCHEMA=N
+# whether execute table script migration (Default=N)
+SCRIPT_TABLE=N
+# Number of work thread for table script (Default=1)
+TABLE_PARALLEL_COUNT=1
+# whether execute index script migration(Default=Y)
+SCRIPT_INDEX=Y
+# Number of work thread for index script (Default=4)
+INDEX_PARALLEL_COUNT=4
+# Start DB.mig_seq Number for index migration (Default=0)
+INDEX_START_MIGSEQ=0
+# dependency for index, check that the table data migration is complete (Default=N)
+INDEX_CHK_DEPENDENCY=N
+# dependency for index, check that the partition table data migration is complete (Default=N)
+INDEX_CHK_DEPENDENCY_FOR_PARTITION=N
+# whether execute constraint script migration(Default=N)
+SCRIPT_CONSTRAINT=N
+# Number of work thread for constraint script (Default=4)
+CONSTRAINT_PARALLEL_COUNT=4
+# dependency for constraint, check that the index migration is complete or nothing
+CONSTRAINT_CHK_DEPENDENCY=N
+# whether execute ETC(PL/SQL/SYNONYM/GRANT) script migration (Default=N)
+SCRIPT_ETC=N
+# Number of work thread for ETC script Default=1)
+ETC_PARALLEL_COUNT=1
+
+#######################
+# Gathering STAT
+#######################
+
+# whether execute gathring stat (Default=N)
+GATHER_STAT=Y
+# rule table name for gathering stat (Default=MIG_STAT)
+STAT_RULE_NM=MIG_STAT
+# Number of work thread for gathering STAT (Default=4)
+STAT_PARALLEL_COUNT=4
+# Start DB.mig_seq Number for stat migration (Default=0)
+STAT_START_MIGSEQ=0
+# dependency for stat, check that the table data migration is complete/index migration is complete or nothing (Default=Y)
+STAT_CHK_DEPENDENCY=Y

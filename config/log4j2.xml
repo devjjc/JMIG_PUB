@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Properties>
+        <Property name="logNm">jmig</Property>
+        <Property name="log_pattern">%d{MM-dd HH:mm:ss} [%t] %-5level - %msg%n</Property>
+     </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${log_pattern}"/>
+        </Console>
+        <!-- 
+        <File name="File" fileName="D:\work\05. Program\work_java_2022\Test\log\jmig.log" append="true">
+            <PatternLayout pattern="${log_pattern}"/>
+        </File>
+        -->
+        <RollingFile name="File" fileName="log/${logNm}.log" filePattern="log/${logNm}_%d{yyyy-MM-dd}_%i.log">
+			<PatternLayout pattern="${log_pattern}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+			</Policies>
+			<DefaultRolloverStrategy max="500" fileIndex="min" />
+		</RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="info" >
+            <AppenderRef ref="File"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

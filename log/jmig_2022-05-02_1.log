@@ -1,0 +1,64 @@
+05-02 18:25:09 [main] ERROR - Not Founds Property File : D:\work\05. Program\work_java_2022\JMIG\mig.properties
+05-02 18:25:31 [main] ERROR - Not Founds Property File : D:\work\05. Program\work_java_2022\JMIG\mig.properties
+05-02 18:26:03 [main] INFO  - =======================================================
+05-02 18:26:03 [main] INFO  - MIG_IDX_RULE_NM=MIG_IDX
+05-02 18:26:03 [main] INFO  - SCRIPT_STORE_TYPE=SCHEMA
+05-02 18:26:03 [main] INFO  - RULE_SCHEMA=tibero
+05-02 18:26:03 [main] INFO  - CONN_URL=jdbc:tibero:thin:@192.168.10.38:8629:jibang
+05-02 18:26:03 [main] INFO  - RULE_PASS=tmax
+05-02 18:26:03 [main] INFO  - PRINT_CONSOLE=Y
+05-02 18:26:03 [main] INFO  - MIGTOOL_HOME=/home/jibang/work/tabmig
+05-02 18:26:03 [main] INFO  - MIG_INDEX=Y
+05-02 18:26:03 [main] INFO  - SCRIPT_HOME=/home/tibero/work/tabmig/index
+05-02 18:26:03 [main] INFO  - MIGTOOL_NAME=migrator.sh
+05-02 18:26:03 [main] INFO  - MIG_TABLE=Y
+05-02 18:26:03 [main] INFO  - ID=tac1
+05-02 18:26:03 [main] INFO  - MIG_TAB_RULE_NM=MIG_TAB
+05-02 18:26:03 [main] INFO  - MIGTAB_PARALLEL_COUNT=32
+05-02 18:26:03 [main] INFO  - MIGIDX_PARALLEL_COUNT=32
+05-02 18:26:03 [main] INFO  - LOG_LEVEL=INFO
+05-02 18:26:03 [main] INFO  - MIGTOOL_LOGPATH=/home/jibang/work/tabmig/auto_log
+05-02 18:26:03 [main] INFO  - =======================================================
+05-02 18:26:04 [M01] INFO  - Not Exists Migration Table
+05-02 18:26:30 [main] INFO  - =======================================================
+05-02 18:26:30 [main] INFO  - MIG_IDX_RULE_NM=MIG_IDX
+05-02 18:26:30 [main] INFO  - SCRIPT_STORE_TYPE=SCHEMA
+05-02 18:26:30 [main] INFO  - RULE_SCHEMA=tibero
+05-02 18:26:30 [main] INFO  - CONN_URL=jdbc:tibero:thin:@192.168.10.38:8629:jibang
+05-02 18:26:30 [main] INFO  - RULE_PASS=tmax
+05-02 18:26:30 [main] INFO  - PRINT_CONSOLE=Y
+05-02 18:26:30 [main] INFO  - MIGTOOL_HOME=/home/jibang/work/tabmig
+05-02 18:26:30 [main] INFO  - MIG_INDEX=Y
+05-02 18:26:30 [main] INFO  - SCRIPT_HOME=/home/tibero/work/tabmig/index
+05-02 18:26:30 [main] INFO  - MIGTOOL_NAME=migrator.sh
+05-02 18:26:30 [main] INFO  - MIG_TABLE=Y
+05-02 18:26:30 [main] INFO  - ID=tac1
+05-02 18:26:30 [main] INFO  - MIG_TAB_RULE_NM=MIG_TAB
+05-02 18:26:30 [main] INFO  - MIGTAB_PARALLEL_COUNT=32
+05-02 18:26:30 [main] INFO  - MIGIDX_PARALLEL_COUNT=32
+05-02 18:26:30 [main] INFO  - LOG_LEVEL=INFO
+05-02 18:26:30 [main] INFO  - MIGTOOL_LOGPATH=/home/jibang/work/tabmig/auto_log
+05-02 18:26:30 [main] INFO  - =======================================================
+05-02 18:26:30 [MIG-01] INFO  - Not Exists Migration Table
+05-02 18:35:15 [main] INFO  - Exists Property File
+05-02 18:35:15 [main] INFO  - =======================================================
+05-02 18:35:15 [main] INFO  - MIG_IDX_RULE_NM=MIG_IDX
+05-02 18:35:15 [main] INFO  - SCRIPT_STORE_TYPE=SCHEMA
+05-02 18:35:15 [main] INFO  - RULE_SCHEMA=tibero
+05-02 18:35:15 [main] INFO  - CONN_URL=jdbc:tibero:thin:@192.168.10.38:8629:jibang
+05-02 18:35:15 [main] INFO  - RULE_PASS=tmax
+05-02 18:35:15 [main] INFO  - PRINT_CONSOLE=Y
+05-02 18:35:15 [main] INFO  - MIGTOOL_HOME=/home/jibang/work/tabmig
+05-02 18:35:15 [main] INFO  - MIG_INDEX=Y
+05-02 18:35:15 [main] INFO  - SCRIPT_HOME=/home/tibero/work/tabmig/index
+05-02 18:35:15 [main] INFO  - MIGTOOL_NAME=migrator.sh
+05-02 18:35:15 [main] INFO  - MIG_TABLE=Y
+05-02 18:35:15 [main] INFO  - ID=tac1
+05-02 18:35:15 [main] INFO  - MIG_TAB_RULE_NM=MIG_TAB
+05-02 18:35:15 [main] INFO  - MIGTAB_PARALLEL_COUNT=32
+05-02 18:35:15 [main] INFO  - MIGIDX_PARALLEL_COUNT=32
+05-02 18:35:15 [main] INFO  - LOG_LEVEL=TRACE
+05-02 18:35:15 [main] INFO  - MIGTOOL_LOGPATH=/home/jibang/work/tabmig/auto_log
+05-02 18:35:15 [main] INFO  - =======================================================
+05-02 18:35:16 [MIG-01] INFO  - Not Exists Migration Table
+05-02 18:35:16 [MIG-02] INFO  - Not Exists Migration Table
